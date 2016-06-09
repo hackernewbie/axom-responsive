@@ -157,7 +157,7 @@ This theme, like WordPress, is licensed under the GPL.
 /* Dropdown */
 .open .dropdown-toggle {
     color: #FDFFFF ;
-    background-color: #555 !important;
+    background-color: #d15002 !important;
 }
 
 /* Dropdown links */
@@ -167,7 +167,7 @@ This theme, like WordPress, is licensed under the GPL.
 
 /* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: #d15002 !important;
 }
 footer#footerBlock{
 	background: #1b1b1b;
