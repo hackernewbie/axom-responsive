@@ -29,6 +29,9 @@ This theme, like WordPress, is licensed under the GPL.
     .carousel-caption {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
+    .div-banner-section-parent{
+        display: none;
+    }
 }
 .bg-first-section {
     background: #2d2d30;
@@ -58,14 +61,21 @@ This theme, like WordPress, is licensed under the GPL.
     margin-top: 15px;
     color: #555;
 }
-/*Centered LOGO Region here*/
+/*Center LOGO Region here*/
 .div-logo{
     float: center;
     text-align: center;
     align-content: center;
-    background-color: #dedede;
-    margin-top: 20px;
+    /*background-color: #dedede;*/
+    margin-top: 30px;
     opacity: 0.8;
+    width: auto;
+    max-height: 100%;
+    padding-top: 6px;
+}
+.div-logo>p>img{
+    max-height: 132px;
+    padding-bottom: 6px;
 }
 .wrapper{
     position: relative;
@@ -75,11 +85,14 @@ This theme, like WordPress, is licensed under the GPL.
 /*The Banner/Slider section*/
 .div-banner-section
 {
-    z-index: 3;
     background-color: #fff;
     text-align: left !important;
     text-align: center;
     position: relative;
+}
+.img-responsive.img-center {
+  margin: 0 auto;
+
 }
 .div-main-data-wrapper{
     background-color: #ECECEC;
@@ -123,15 +136,20 @@ This theme, like WordPress, is licensed under the GPL.
     background-color: #EC5900;            /*Orange Menu*/
     border: 0;
     font-size: 11px !important;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     opacity:0.9;
+    z-index: 1111;
 }
 
 /* Add a color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
     color: #ffffff !important;
+    height: 60px;
+    padding: 5px 12px;
 }
-
+.navbar-brand>img{
+    max-height: 100%;
+}
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
     color: #FDFFFF !important;
@@ -187,6 +205,7 @@ footer a {
     background-color: #000000;
     padding: 20px;
     color: #666 !important;
+    text-align: center;
 }
 .footer-to-top{
     float:right;
@@ -194,6 +213,14 @@ footer a {
 .footer-widget-area{
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
+}
+.footer-widget-area{
+    text-align: left;
+    color: #fff;
+}
+.footer-widget>h3{
+    text-align: center;
+    color: #fff;
 }
 footer a:hover {
     color: #777;
@@ -218,7 +245,9 @@ h3, h4 {
 .form-control {
     border-radius: 0;
 }
-
+.text-left{
+    text-align: left;
+}
 /* Disable the ability to resize textareas */
 textarea {
     resize: none;
