@@ -72,6 +72,7 @@ This theme, like WordPress, is licensed under the GPL.
     width: auto;
     max-height: 100%;
     padding-top: 6px;
+    display: none;
 }
 .div-logo>p>img{
     max-height: 132px;
@@ -79,7 +80,7 @@ This theme, like WordPress, is licensed under the GPL.
 }
 .wrapper{
     position: relative;
-    z-index: 2;
+    z-index: 999;
     height: 30px;
 }
 /*The Banner/Slider section*/
@@ -89,6 +90,7 @@ This theme, like WordPress, is licensed under the GPL.
     text-align: left !important;
     text-align: center;
     position: relative;
+    margin-top: 26px;
 }
 .img-responsive.img-center {
   margin: 0 auto;
@@ -221,6 +223,7 @@ footer a {
 .footer-widget>h3{
     text-align: center;
     color: #fff;
+    max-width: 80%;
 }
 footer a:hover {
     color: #777;
