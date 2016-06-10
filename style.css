@@ -172,7 +172,7 @@ This theme, like WordPress, is licensed under the GPL.
 /* Dropdown */
 .open .dropdown-toggle {
     color: #FDFFFF ;
-    background-color: #d15002 !important;
+    background-color: #555 !important;
 }
 
 /* Dropdown links */
